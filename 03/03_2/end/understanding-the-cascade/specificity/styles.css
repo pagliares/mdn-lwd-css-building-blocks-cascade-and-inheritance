@@ -1,0 +1,53 @@
+a {
+    display: inline-block;
+    line-height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding: 0;
+}
+
+/* Removes the bullet */
+li {
+    list-style-type: none;
+}    
+
+/* 0101 */
+#outer a {
+    background-color: red;
+}
+
+/* 0201 */
+#outer #inner a {
+    background-color: blue;
+}
+
+/* 0104 */
+#outer div ul li a {
+    color: yellow;
+}
+
+/* 0113 */
+#outer div ul .nav a {
+    color: white;
+}
+
+/* 0024 */
+div div li:nth-child(2) a:hover {
+    border: 10px solid black;
+}
+
+/* 0023 */
+div li:nth-child(2) a:hover {
+   border: 10px dashed black; 
+}
+
+/* 0033 */
+div div .nav:nth-child(2) a:hover {
+  border: 10px double black;
+}
